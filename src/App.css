@@ -7,6 +7,10 @@ main {
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .mainContainer {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,7 @@
+.projectsContainer {
+  display: flex;
+
+  min-height: 20vh;
+
+  margin: 5vh;
+}

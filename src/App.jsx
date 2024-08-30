@@ -1,5 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbarComponent/Navbar";
+import Projects from "./components/projectComponent/Projects";
+import Skills from "./components/skillsComponent/Skills";
 import Welcome from "./components/welcomeComponent/Welcome";
 
 function App() {
@@ -7,14 +9,16 @@ function App() {
     <>
       <main>
         <Navbar />
-        <Welcome />
+        <div id="Home" className="mainContainer">
+          <Welcome />
 
-        {/* Should outline what technologies that are being used */}
+          {/* Should outline what technologies that are being used */}
 
-        {/* Respective Components */}
-        <div>Skills</div>
-        <div>Projects</div>
-        <div>About</div>
+          {/* Respective Components */}
+          <Skills />
+          <Projects />
+          <div>About</div>
+        </div>
       </main>
     </>
   );

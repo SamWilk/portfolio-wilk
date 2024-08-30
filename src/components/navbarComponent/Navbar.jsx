@@ -4,16 +4,46 @@ function Navbar() {
   return (
     <>
       <div className="navbarContainer">
-        <a className="navbarName">Sam Wilk</a>
-        <ul className="navbarList">
+        <ul id="navList" className="navbarList">
           <li>
-            <a className="navButton">Skills</a>
+            <input
+              type="button"
+              className="navButton"
+              value="Home"
+              onClick={() => {
+                document.getElementById("Home").scrollIntoView();
+              }}
+            />
           </li>
           <li>
-            <a className="navButton">Projects</a>
+            <input
+              type="button"
+              className="navButton"
+              value="Skills"
+              onClick={() => {
+                document.getElementById("Home").scrollIntoView();
+              }}
+            />
           </li>
           <li>
-            <a className="navButton">About</a>
+            <input
+              type="button"
+              className="navButton"
+              value="Projects"
+              onClick={() => {
+                document.getElementById("Home").scrollIntoView();
+              }}
+            />
+          </li>
+          <li>
+            <input
+              type="button"
+              className="navButton"
+              value="About"
+              onClick={() => {
+                document.getElementById("Home").scrollIntoView();
+              }}
+            />
           </li>
         </ul>
       </div>

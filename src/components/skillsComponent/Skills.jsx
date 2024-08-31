@@ -1,9 +1,19 @@
+import SkillCard from "./SkillCard";
 import "./Skills.css";
 
 function Skills() {
   return (
     <>
-      <div className="skillsContainer">Skills</div>
+      <div className="skillsContainer">
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+        <SkillCard props={{ colorNumber: 1 }} />
+      </div>
     </>
   );
 }

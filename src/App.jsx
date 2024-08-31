@@ -15,8 +15,12 @@ function App() {
           {/* Should outline what technologies that are being used */}
 
           {/* Respective Components */}
-          <Skills />
-          <Projects />
+          <span id="Skills">
+            <Skills />
+          </span>
+          <span id="Projects">
+            <Projects />
+          </span>
           <div>About</div>
         </div>
       </main>

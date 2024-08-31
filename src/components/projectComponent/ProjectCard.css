@@ -1,0 +1,26 @@
+.projectCardContainer {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  height: 30vh;
+  width: 15vw;
+
+  word-wrap: normal;
+
+  margin: 1rem;
+
+  border: solid black 1px;
+  border-radius: 24px;
+
+  background-color: #a3f6a8;
+
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.projectDescription {
+  font-size: 12px;
+}

@@ -1,0 +1,18 @@
+.skillCardContainer {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 50%;
+
+  width: 6.36vw;
+  height: 12vh;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #c5d3fd;
+
+  border: solid black 1px;
+
+  margin: 1rem;
+}

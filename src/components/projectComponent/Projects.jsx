@@ -1,9 +1,18 @@
+import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
 function Projects() {
   return (
     <>
-      <div className="projectsContainer">Projects</div>
+      <div className="projectsContainer">
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+        <ProjectCard props={{ colorNumber: 1 }} />
+      </div>
     </>
   );
 }

@@ -1,7 +1,12 @@
 .skillsContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   min-height: 20vh;
+  width: 60vw;
 
-  margin: 5vh;
+  flex-wrap: wrap;
+
+  margin-bottom: 7vh;
 }

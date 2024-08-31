@@ -6,7 +6,7 @@ function Welcome() {
       <div className="welcomeContainer">
         <div className="introContainer">
           <h2 className="introTitle">
-            Hi, I'm <span className="nameText">Sam Wilk.</span>
+            Hi, I&apos;m <span className="nameText">Sam Wilk.</span>
           </h2>
           <p className="intoPara">
             I am a Software Engineer located in Jacksonville, FL. Lorem ipsum

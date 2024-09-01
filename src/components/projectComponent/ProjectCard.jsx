@@ -1,18 +1,31 @@
+import IconComponent from "../iconComponent/IconComponent";
 import "./ProjectCard.css";
 import { DiUbuntu } from "react-icons/di";
 
 function ProjectCard({ props }) {
+  // Extract ProjectName object
+  const projectName = props.ProjectName;
+
+  // Destructure properties from ProjectName
+  const { Description, Icons, github, Title } = projectName;
   return (
     <>
-      <div className="projectCardContainer">
-        <h3>Title</h3>
-        <DiUbuntu size={50} />
-        <p className="projectDescription">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Primis interdum
-          nisl lobortis venenatis vivamus facilisi ante. Risus habitasse metus
-          amet natoque at purus senectus ipsum.
-        </p>
-      </div>
+      <a className="projectCardContainer" href={github} target="_blank">
+        <span className="projectCardTitleContainer">
+          <strong>{Title}</strong>
+          <div className="iconContainer">
+            {Icons.map((iconName, idx) => {
+              return (
+                <span key={idx}>
+                  <IconComponent iconName={iconName} />
+                </span>
+              );
+            })}
+          </div>
+        </span>
+        {/* <IconComponent props={Icon} */}
+        <p className="projectDescription">{Description}</p>
+      </a>
     </>
   );
 }

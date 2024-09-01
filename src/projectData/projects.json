@@ -1,0 +1,34 @@
+{
+  "Projects": [
+    {
+      "ProjectName": {
+        "Title": "Portfolio Website",
+        "Description": "This is a repo for this site. This project is hosted by nginx on a remote desktop. It has CI/CD pipelines for easy deployment for production.",
+        "Icons": ["SiVite", "SiNginx", "SiReact", "SiJavascript", "SiCss3"],
+        "github": "https://github.com/SamWilk/portfolio-wilk"
+      }
+    },
+    {
+      "ProjectName": {
+        "Title": "Pokemon Tracker",
+        "Description": "This is a Pokemon tracker that can be used by a speed runner of any pokemon game. They can use it to track pokemon that have been seen, caught, etc. Allows for users to login and edit their profile.",
+        "Icons": [
+          "SiVite",
+          "SiPostgresql",
+          "SiReact",
+          "SiJavascript",
+          "SiCss3"
+        ],
+        "github": "https://github.com/SamWilk/pokemon-react"
+      }
+    },
+    {
+      "ProjectName": {
+        "Title": "Pokemon Tracker Api",
+        "Description": "This is the api that runs along side the Pokemon Tracker UI. Using techonolgies like Express JS, PostgreSQL, Node JS.",
+        "Icons": ["SiNodedotjs", "SiPostgresql", "SiExpress"],
+        "github": "https://github.com/SamWilk/pokemon-react-server"
+      }
+    }
+  ]
+}

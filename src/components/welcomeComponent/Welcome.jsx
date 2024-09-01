@@ -9,14 +9,18 @@ function Welcome() {
             Hi, I&apos;m <span className="nameText">Sam Wilk.</span>
           </h2>
           <p className="intoPara">
-            I am a Software Engineer located in Jacksonville, FL. Lorem ipsum
-            odor amet, consectetuer adipiscing elit. Primis interdum nisl
-            lobortis venenatis vivamus facilisi ante. Risus habitasse metus amet
-            natoque at purus senectus ipsum. Dignissim egestas dolor massa;
-            dictumst vivamus ullamcorper? Habitasse at interdum id dolor potenti
-            lectus elementum pharetra. Ullamcorper nam venenatis ipsum ex erat
-            facilisis? Purus suspendisse vulputate magnis gravida ultricies
-            ipsum integer at.
+            Hi there, my name is Sam Wilk, and I'm a software engineer with a
+            passion for developing innovative solutions. I've been working in
+            the tech industry for over three years, specializing in backend
+            development and cloud computing. My background includes a degree in
+            Computer Science and hands-on experience with various technologies
+            like Node.js, C#, and SQL. I thrive on tackling complex problems and
+            creating efficient, scalable systems that drive business success.
+            Currently, I’m focused on optimizing system performance and
+            enhancing overall functionality. Outside of coding, I enjoy staying
+            up-to-date with the latest industry trends. I'm excited to connect
+            with like-minded professionals and explore new opportunities in this
+            ever-evolving field.
           </p>
         </div>
       </div>

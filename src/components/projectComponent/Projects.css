@@ -4,7 +4,11 @@
   justify-content: center;
 
   min-height: 20vh;
-  min-width: 80vw;
+  width: 85vw;
 
   flex-wrap: wrap;
+}
+
+.projectsMain {
+  margin-bottom: 20vh;
 }

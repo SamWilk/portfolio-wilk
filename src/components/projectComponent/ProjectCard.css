@@ -1,11 +1,11 @@
 .projectCardContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 
   flex-wrap: wrap;
 
-  height: 30vh;
-  width: 15vw;
+  height: 15vh;
+  width: 20vw;
 
   word-wrap: normal;
 
@@ -17,10 +17,41 @@
   background-color: #a3f6a8;
 
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
+
+  color: #334b49;
+  text-decoration: none; /* or other styles you want */
+
+  transition: 0.1s ease;
+}
+
+/* Remove the hover color change */
+.projectCardContainer:hover {
+  color: #334b49;
+  text-decoration: none; /* or other styles you want */
+
+  background-color: #4aff56;
+
+  transform: scale(1.025);
+  transition: 0.1s ease;
 }
 
 .projectDescription {
   font-size: 12px;
+  text-align: left;
+}
+
+.projectCardTitleContainer {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 100%;
+
+  justify-content: space-between;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
 }

@@ -43,7 +43,7 @@ jobs:
         with:
           name: build
 
-      - name: Setup SSH
+      - name: Remote into Server
         runs-on: ubuntu-latest
         steps:
         - name: executing remote ssh commands using password

@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: dist/* # Adjust if your build output directory is different
+          path: ./ # Adjust if your build output directory is different
 
       - name: List files in build directory
         run: ls -la dist

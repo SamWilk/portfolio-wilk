@@ -51,7 +51,7 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: List files in build directory
-        run: ls -la dist
+        run: ls -la
 
         # - name: Deploy to remote server
         #   run: |

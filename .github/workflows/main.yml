@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: ./ # Adjust if your build output directory is different
+          path: dist # Adjust if your build output directory is different
 
       - name: List files in build directory
         run: ls -la dist
@@ -51,6 +51,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+          path: dist
 
       - name: Setup SSH
         run: |

@@ -48,7 +48,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 139.177.205.51 >> ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Deploy to remote server
         env:
@@ -56,8 +56,8 @@ jobs:
         run: |
           # Add the remote server's SSH key to known_hosts to prevent host verification prompts
           mkdir -p ~/.ssh
-          ssh-keyscan -H 139.177.205.51 >> ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
           
           # Use SCP to copy the build files to the remote server
-          scp -i ~/.ssh/id_rsa -r dist/* root@139.177.205.51:/var/www/html/
+          scp -i ~/.ssh/id_rsa -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
 

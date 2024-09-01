@@ -6,10 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  Build:
+    name: Build
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' # Ensures deploy runs only on PR events
-      - name: executing remote ssh commands using password
+    steps:
+      - name: Connect to Remote and Build
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_IP }}
@@ -30,7 +31,6 @@ jobs:
       #     # Add the remote server's SSH key to known_hosts to prevent host verification prompts
       #     mkdir -p ~/.ssh
       #     ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
-          
+
       #     # Use SCP to copy the build files to the remote server
       #     scp -i ~/.ssh/id_rsa -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
-

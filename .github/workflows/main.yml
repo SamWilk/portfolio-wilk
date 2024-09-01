@@ -17,12 +17,14 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            cd ../projects/portfolio-work
-            git checkout main
-            git pull
-            npm i
-            npm run build
-            cp -R ./dist/* ../../var/www/html/
+            pwd
+            ls
+            # cd ../projects/portfolio-work
+            # git checkout main
+            # git pull
+            # npm i
+            # npm run build
+            # cp -R ./dist/* ../../var/www/html/
 
       # - name: Deploy to remote server
       #   env:

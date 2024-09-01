@@ -35,7 +35,7 @@ function Navbar() {
               }}
             />
           </li>
-          <li>
+          {/* <li>
             <input
               type="button"
               className="navButton"
@@ -44,7 +44,7 @@ function Navbar() {
                 document.getElementById("About").scrollIntoView();
               }}
             />
-          </li>
+          </li> */}
         </ul>
       </div>
     </>

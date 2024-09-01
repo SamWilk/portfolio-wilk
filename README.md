@@ -1,4 +1,4 @@
-# [Your Name]'s Portfolio
+# Sam Wilk's Portfolio
 
 Welcome to my portfolio website! This site showcases my work as a software engineer, including projects, skills, and professional experiences. Below, you'll find information about the project's structure, how to set it up locally, and other relevant details.
 
@@ -8,6 +8,9 @@ Welcome to my portfolio website! This site showcases my work as a software engin
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ## About
 
@@ -61,7 +64,42 @@ To get this project up and running locally, follow these steps:
    ```
 
 4. **Start the development server**:
+
    ```bash
    npm run dev
    ```
+
    Open your browser
+
+5. **Build for production**:
+   ```bash
+   npm run build
+   ```
+   This will create an optimized build of my site in the `dist` directory.
+
+## Usage
+
+- **Browse** through the portfolio sections to explore various projects and skills.
+- **Interact** with dynamic content and animations to get a sense of my technical abilities.
+- **Download** my resume or contact me via the form provided.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a Pull Request.
+
+## Contact
+
+Feel free to reach out to me through the following channels:
+
+- **Email**: [Samwilk18@outlook.com](mailto:samwilk18@outlook.com)
+- **LinkedIn**: [linkedin.com/in/SamWilk](https://www.linkedin.com/in/sam-wilk-a66314210/)
+- **GitHub**: [github.com/SamWilk](https://github.com/SamWilk)
+
+Thank you for visiting my portfolio!

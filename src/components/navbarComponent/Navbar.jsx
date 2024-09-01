@@ -41,7 +41,7 @@ function Navbar() {
               className="navButton"
               value="About"
               onClick={() => {
-                document.getElementById("Home").scrollIntoView();
+                document.getElementById("About").scrollIntoView();
               }}
             />
           </li>

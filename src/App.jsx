@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/aboutComponent/About";
 import Navbar from "./components/navbarComponent/Navbar";
 import Projects from "./components/projectComponent/Projects";
 import Skills from "./components/skillsComponent/Skills";
@@ -21,7 +22,9 @@ function App() {
           <span id="Projects">
             <Projects />
           </span>
-          <div>About</div>
+          <span id="About">
+            <About />
+          </span>
         </div>
       </main>
     </>

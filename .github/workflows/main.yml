@@ -50,10 +50,15 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to remote server
-        run: |
-          pwd
-          ls
-          # scp -i ~/.ssh/id_ed25519 -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: List files in build directory
+        run: ls -la dist
+
+        # - name: Deploy to remote server
+        #   run: |
+        #     git pull
+        #     npm i
+        #     npm run build
+        #     cp -R ./dist/*
+        #     # scp -i ~/.ssh/id_ed25519 -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
+        # env:
+        #   SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}

@@ -1,7 +1,7 @@
 name: Build and Deploy Vite React Project
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -16,19 +16,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # Specify your Node.js version here
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build # Adjust this if you use a different script
+        run: npm run build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: dist # Adjust if your build output directory is different
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest

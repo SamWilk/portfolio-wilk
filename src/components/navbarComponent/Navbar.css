@@ -60,3 +60,17 @@
 .navbarName {
   margin-left: 5vw;
 }
+
+@media screen and (max-width: 500px) {
+  .navbarList {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+  }
+}

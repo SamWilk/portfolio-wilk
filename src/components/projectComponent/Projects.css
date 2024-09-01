@@ -12,3 +12,16 @@
 .projectsMain {
   margin-bottom: 20vh;
 }
+
+@media screen and (max-width: 500px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    min-height: 20vh;
+    width: 90vw;
+
+    flex-wrap: wrap;
+  }
+}

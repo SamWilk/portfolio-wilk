@@ -22,9 +22,9 @@ function App() {
           <span id="Projects">
             <Projects />
           </span>
-          <span id="About">
+          {/* <span id="About">
             <About />
-          </span>
+          </span> */}
         </div>
       </main>
     </>

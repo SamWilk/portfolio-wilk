@@ -21,14 +21,23 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: List files in build directory
+        run: ls -la
+
       - name: Build the project
         run: npm run build # Adjust this if you use a different script
+
+      - name: List files in build directory
+        run: ls -la
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build
           path: dist # Adjust if your build output directory is different
+
+      - name: List files in build directory
+        run: ls -la
 
   deploy:
     runs-on: ubuntu-latest

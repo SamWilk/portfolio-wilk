@@ -44,20 +44,25 @@ jobs:
           name: build
 
       - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+        runs-on: ubuntu-latest
+        steps:
+        - name: executing remote ssh commands using password
+          uses: appleboy/ssh-action@v1.0.3
+          with:
+            host: ${{ secrets.SERVER_IP }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            script: |
+              echo "Hello there from the other side"
 
-      - name: Deploy to remote server
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          # Add the remote server's SSH key to known_hosts to prevent host verification prompts
-          mkdir -p ~/.ssh
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+      # - name: Deploy to remote server
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #   run: |
+      #     # Add the remote server's SSH key to known_hosts to prevent host verification prompts
+      #     mkdir -p ~/.ssh
+      #     ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
           
-          # Use SCP to copy the build files to the remote server
-          scp -i ~/.ssh/id_rsa -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
+      #     # Use SCP to copy the build files to the remote server
+      #     scp -i ~/.ssh/id_rsa -r dist/* root@${{ secrets.SERVER_IP }}:/var/www/html/
 

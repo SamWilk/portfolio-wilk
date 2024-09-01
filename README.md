@@ -1,4 +1,4 @@
-# [Your Name]'s Portfolio
+# Sam Wilk's Portfolio
 
 Welcome to my portfolio website! This site showcases my work as a software engineer, including projects, skills, and professional experiences. Below, you'll find information about the project's structure, how to set it up locally, and other relevant details.
 

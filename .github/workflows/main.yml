@@ -42,7 +42,7 @@ jobs:
           name: build
 
       - name: List files in build directory
-        run: ls -la
+        run: ls -la dist
 
   deploy:
     runs-on: ubuntu-latest

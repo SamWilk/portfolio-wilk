@@ -34,7 +34,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: dist # Adjust if your build output directory is different
 
       - name: Download build artifacts
         uses: actions/download-artifact@v3

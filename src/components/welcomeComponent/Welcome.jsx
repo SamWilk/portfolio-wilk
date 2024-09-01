@@ -1,4 +1,8 @@
 import "./Welcome.css";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { SiMicrosoftoutlook } from "react-icons/si";
+import { FaFilePdf } from "react-icons/fa6";
+import resume from "./MyResume.pdf";
 
 function Welcome() {
   return (
@@ -8,6 +12,31 @@ function Welcome() {
           <h2 className="introTitle">
             Hi, I&apos;m <span className="nameText">Sam Wilk.</span>
           </h2>
+          <ul className="linkList">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/sam-wilk-a66314210/"
+                target="_blank"
+              >
+                <FaLinkedin size={50} />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:samwilk18@outlook.com">
+                <SiMicrosoftoutlook size={50} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/SamWilk" target="_blank">
+                <FaGithubSquare size={50} />
+              </a>
+            </li>
+            <li>
+              <a href={resume} target="_blank" rel="noreferrer">
+                <FaFilePdf size={45} />
+              </a>
+            </li>
+          </ul>
           <p className="intoPara">
             Hi there, my name is Sam Wilk, and I'm a software engineer with a
             passion for developing innovative solutions. I've been working in

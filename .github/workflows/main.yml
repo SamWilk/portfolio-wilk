@@ -44,7 +44,6 @@ jobs:
           name: build
 
       - name: Remote into Server
-        runs-on: ubuntu-latest
         steps:
         - name: executing remote ssh commands using password
           uses: appleboy/ssh-action@v1.0.3

@@ -2,7 +2,7 @@ import "./Welcome.css";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { SiMicrosoftoutlook } from "react-icons/si";
 import { FaFilePdf } from "react-icons/fa6";
-import resume from "./MyResume.pdf";
+import resume from "./SamWilkResume.pdf";
 
 function Welcome() {
   return (

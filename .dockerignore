@@ -1,0 +1,7 @@
+.git
+.github
+
+dist
+
+package-lock.json
+node_modules

@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wilk-portfolio-app
+  namespace: wilk-portfolio
+  labels:
+    app: wilk-portfolio-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: wilk-portfolio-app
+  template:
+    metadata:
+      labels:
+        app: wilk-portfolio-app
+    spec:
+      containers:
+        - name: nginx-wilk-prod
+          image: samwilk18/portfolio-docker:1.0.0-prod
+          ports:
+            - containerPort: 80

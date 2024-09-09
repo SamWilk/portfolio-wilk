@@ -9,7 +9,6 @@ Welcome to my portfolio website! This site showcases my work as a software engin
 - [Technology Stack](#technology-stack)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [Contact](#contact)
 
 ## About
@@ -82,17 +81,6 @@ To get this project up and running locally, follow these steps:
 - **Browse** through the portfolio sections to explore various projects and skills.
 - **Interact** with dynamic content and animations to get a sense of my technical abilities.
 - **Download** my resume or contact me via the form provided.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/YourFeature`).
-6. Open a Pull Request.
 
 ## Contact
 

@@ -80,7 +80,7 @@ To get this project up and running locally, follow these steps:
 
 - **Browse** through the portfolio sections to explore various projects and skills.
 - **Interact** with dynamic content and animations to get a sense of my technical abilities.
-- **Download** my resume or contact me via the form provided.
+- **Download** my resume.
 
 ## Contact
 

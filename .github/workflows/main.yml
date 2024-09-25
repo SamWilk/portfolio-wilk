@@ -80,3 +80,20 @@ jobs:
           scp -i ~/.ssh/id_ed25519 -r dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html/
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+  deploy-k8s-prod:
+    runs-on: ubuntu-latest
+    needs: build-docker-image
+    environment: production
+    steps:
+      - name: Configure kubectl
+        uses: Azure/k8s-set-context@v1
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+
+      - name: Deploy k8s yaml
+        id: deploy-k8s-yaml
+        run: |
+          kubectl -n wilk-portfolio rollout restart deployment
+

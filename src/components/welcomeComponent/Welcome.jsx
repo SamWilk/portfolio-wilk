@@ -10,7 +10,7 @@ function Welcome() {
       <div className="welcomeContainer">
         <div className="introContainer">
           <h2 className="introTitle">
-            Hi, I&apos;m <span className="nameText">Sam Wilk.</span>
+            Hi, I&apos;m <span className="nameText">Sam Wilk. This is a test</span>
           </h2>
           <ul className="linkList">
             <li>

@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: nginx-wilk-prod
-          image: samwilk18/portfolio-docker:1.0.0-prod
+          image: samwilk18/portfolio-docker:latest
           ports:
             - containerPort: 80

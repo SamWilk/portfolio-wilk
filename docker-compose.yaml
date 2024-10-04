@@ -1,0 +1,7 @@
+services:
+  nginx:
+    build:
+      context: ./
+    container_name: nginx-c
+    ports:
+      - 4000:80
